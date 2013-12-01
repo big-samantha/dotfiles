@@ -14,8 +14,10 @@ set number
 
 try
 	set relativenumber
+catch
 endtry
 
 try
 	set cc=80
+catch
 endtry
