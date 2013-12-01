@@ -11,12 +11,11 @@ set tw=0
 set number
 :colors zenburn
 
-if has("cc")
-	set cc=80
-else
-endif
 
-if has("relativenumber")
+try
 	set relativenumber
-else
-endif
+endtry
+
+try
+	set cc=80
+endtry
