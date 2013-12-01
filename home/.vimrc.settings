@@ -15,11 +15,6 @@ set tabstop=2
 set shiftwidth=2
 
 try
-	set relativenumber
-catch
-endtry
-
-try
 	set cc=80
 catch
 endtry
