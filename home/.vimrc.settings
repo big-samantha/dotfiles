@@ -1,1 +1,14 @@
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+set cc=80
+set guifont=Inconsolata:h18
+set tw=0
+set number
+set relativenumber
 :colors zenburn
