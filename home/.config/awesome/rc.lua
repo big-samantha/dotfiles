@@ -1,0 +1,1 @@
+/home/zachary/.homesick/repos/dotfiles/home/.config/awesome/rc.lua
