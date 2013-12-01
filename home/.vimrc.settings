@@ -10,7 +10,9 @@ set guifont=Inconsolata:h18
 set tw=0
 set number
 :colors zenburn
-
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
 try
 	set relativenumber

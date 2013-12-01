@@ -15,6 +15,7 @@ Bundle 'Zenburn'
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
 Bundle "rodjek/vim-puppet"
+Bundle "scrooloose/nerdcommenter"
 
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
