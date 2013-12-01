@@ -6,9 +6,17 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
-set cc=80
 set guifont=Inconsolata:h18
 set tw=0
 set number
-set relativenumber
 :colors zenburn
+
+if has("cc")
+	set cc=80
+else
+endif
+
+if has("relativenumber")
+	set relativenumber
+else
+endif
