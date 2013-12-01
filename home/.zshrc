@@ -33,8 +33,13 @@ plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighti
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Set general path
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+
+# Append rbenv stuff to path if it exists
+if [ -d ~/.rbenv ]; then
+	export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+fi
 
 #options
 bindkey -e
