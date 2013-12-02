@@ -18,3 +18,5 @@ try
 	set cc=80
 catch
 endtry
+
+:syntax on
