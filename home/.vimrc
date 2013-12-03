@@ -14,8 +14,11 @@ Bundle 'Zenburn'
 " original repos on GitHub
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
-Bundle "rodjek/vim-puppet"
 Bundle "scrooloose/nerdcommenter"
+
+" syntax
+Bundle "rodjek/vim-puppet"
+Bundle "tpope/vim-markdown"
 
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
