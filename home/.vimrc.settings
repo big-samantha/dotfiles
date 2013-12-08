@@ -22,3 +22,5 @@ endtry
 :syntax on
 
 au BufNewFile,BufRead *.md set filetype=markdown
+
+let g:neocomplcache_enable_at_startup = 1

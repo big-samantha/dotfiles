@@ -15,6 +15,7 @@ Bundle 'Zenburn'
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdcommenter"
+Bundle "Shougo/neocomplcache.vim"
 
 " syntax
 Bundle "rodjek/vim-puppet"
