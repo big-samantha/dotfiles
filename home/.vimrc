@@ -16,6 +16,7 @@ Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdcommenter"
 Bundle "Shougo/neocomplcache.vim"
+Bundle "godlygeek/tabular"
 
 " syntax
 Bundle "rodjek/vim-puppet"

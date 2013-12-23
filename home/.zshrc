@@ -84,7 +84,7 @@ fi
 
 # ruby -ryaml -e "YAML.load_file 'tst.yaml'"
 validateyaml() {
-  ruby -ryaml -e "YAML.load_file '$1'"
+  ruby -ryaml -rpuppet -e "YAML.load_file '$1'"
 }
 
 showtickets() {
