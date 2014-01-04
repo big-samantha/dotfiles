@@ -442,5 +442,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 awful.util.spawn_with_shell("runonce.sh nm-applet")
 awful.util.spawn_with_shell("runonce.sh volumeicon")
-awful.util.spawn_with_shell("runonce.sh ~/.dropbox-dist/dropbox")
-awful.util.spawn_with_shell("runonce.sh batti")
+awful.util.spawn_with_shell("runonce.sh dropboxd")
+awful.util.spawn_with_shell("runonce.sh batterymon")
