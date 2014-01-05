@@ -47,6 +47,7 @@ set -o vi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #aliases
+alias tmux="tmux -2"
 alias tns="tmux new -s"
 alias ta="tmux attach"
 alias tks='tmux kill-session -t'
@@ -93,4 +94,3 @@ showtickets() {
   ./zendeath.rb myworking
   cd $cwd
 }
-
