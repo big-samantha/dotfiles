@@ -18,6 +18,7 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "Shougo/neocomplcache.vim"
 Bundle "godlygeek/tabular"
 Bundle "kien/ctrlp.vim"
+Bundle "nathanaelkane/vim-indent-guides"
 
 " syntax
 Bundle "rodjek/vim-puppet"
