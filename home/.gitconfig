@@ -1,0 +1,9 @@
+[github]
+	user = zacharyalexstern
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+[user]
+	name = Zachary Alex Stern
+	email = zacharyalexstern@gmail.com
