@@ -4,6 +4,7 @@
 	editor = vim
 	autocrlf = input
 	safecrlf = true
+	filemode = false
 [user]
 	name = Zachary Alex Stern
 	email = zacharyalexstern@gmail.com
