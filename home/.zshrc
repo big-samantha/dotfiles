@@ -94,3 +94,5 @@ showtickets() {
   ./zendeath.rb myworking
   cd $cwd
 }
+
+alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
