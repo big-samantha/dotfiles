@@ -62,6 +62,8 @@ alias untar='tar xvf'
 alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
 alias vsr='vs |grep running'
+alias vbs='vagrant suspend'
+alias vbr='vagrant resume'
 alias ccat='pygmentize -g'
 
 #vars
