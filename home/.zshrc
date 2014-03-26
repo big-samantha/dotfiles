@@ -63,6 +63,7 @@ alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
 alias vsr='vs |grep running'
 alias ccat='pygmentize -g'
+alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 
 #vars
 #
