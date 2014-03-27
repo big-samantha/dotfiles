@@ -65,6 +65,7 @@ alias vsr='vs |grep running'
 alias vbs='vagrant suspend'
 alias vbr='vagrant resume'
 alias ccat='pygmentize -g'
+alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 
 #vars
 #
