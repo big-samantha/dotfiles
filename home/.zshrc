@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighting vagrant)
+plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighting vagrant heroku)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,6 +66,7 @@ alias vbs='vagrant suspend'
 alias vbr='vagrant resume'
 alias ccat='pygmentize -g'
 alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
+alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 
 #vars
 #
@@ -92,11 +93,12 @@ validateyaml() {
   ruby -ryaml -rpuppet -e "YAML.load_file '$1'"
 }
 
-showtickets() {
-  cwd=$(pwd)
-  cd ~/Dropbox/Projects/Personal/Zendeath
-  ./zendeath.rb myworking
-  cd $cwd
+decryptfile() {
+  gpg --decrypt $1 > $1.tar.gz
 }
 
+
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
