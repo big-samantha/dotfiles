@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighting vagrant heroku)
+plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighting vagrant heroku rails)
 
 source $ZSH/oh-my-zsh.sh
 
