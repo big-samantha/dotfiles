@@ -26,4 +26,3 @@ au BufNewFile,BufRead *.md set filetype=markdown
 
 let g:neocomplcache_enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * if !argc() | NERDTree | endif

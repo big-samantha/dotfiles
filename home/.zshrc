@@ -67,6 +67,7 @@ alias vbr='vagrant resume'
 alias ccat='pygmentize -g'
 alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
+alias be='bundle exec'
 
 #vars
 #
