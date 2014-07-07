@@ -28,5 +28,5 @@ let g:neocomplcache_enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
 map <S-n> :set nonumber!<CR>
 map <S-Tab> V`]=
-map <j> gj
-map <k> gk
+map j gj
+map k gk
