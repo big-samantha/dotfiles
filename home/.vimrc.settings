@@ -16,7 +16,7 @@ set shiftwidth=2
 set t_Co=256
 
 try
-	set cc=80
+  set cc=80
 catch
 endtry
 
@@ -26,3 +26,7 @@ au BufNewFile,BufRead *.md set filetype=markdown
 
 let g:neocomplcache_enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
+map <S-n> :set nonumber!<CR>
+map <S-Tab> V`]=
+map <j> gj
+map <k> gk
