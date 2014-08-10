@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vi-mode vagrant zsh-syntax-highlighting vagrant heroku rails)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,8 +42,6 @@ if [ -d ~/.rbenv ]; then
 fi
 
 #options
-bindkey -e
-set -o vi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #aliases
@@ -58,6 +56,7 @@ alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
 alias vs='vagrant status'
 alias vu='vagrant up'
+alias vuvb='vagrant up --provider=virtualbox'
 alias untar='tar xvf'
 alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
@@ -103,3 +102,4 @@ alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem l
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+bindkey -e

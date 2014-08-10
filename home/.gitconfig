@@ -5,6 +5,7 @@
 	autocrlf = input
 	safecrlf = true
 	filemode = false
+	excludesfile = /Users/zachary/.gitignore_global
 [user]
 	name = Zachary Alex Stern
 	email = zacharyalexstern@gmail.com
@@ -19,3 +20,9 @@
   lc =  log --pretty=format:'%h %ad| %s%d [%an]' --graph --date=short --max-count=1
 [push]
 	default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

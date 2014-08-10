@@ -1,12 +1,12 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " My bundles here:
 Bundle 'Zenburn'
@@ -15,11 +15,13 @@ Bundle 'Zenburn'
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdcommenter"
-Bundle "Shougo/neocomplcache.vim"
+Bundle "Shougo/neocomplete.vim"
 Bundle "godlygeek/tabular"
 Bundle "kien/ctrlp.vim"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tpope/vim-rails"
+Bundle "mattn/webapi-vim"
+Bundle "mattn/gist-vim"
 
 " syntax
 Bundle "rodjek/vim-puppet"

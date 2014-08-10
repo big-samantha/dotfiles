@@ -6,7 +6,7 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
-set guifont=Inconsolata:h18
+set guifont=Inconsolata-dz\ for\ Powerline:h16
 set tw=0
 set number
 :colors zenburn
@@ -24,9 +24,14 @@ endtry
 
 au BufNewFile,BufRead *.md set filetype=markdown
 
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
-map <S-n> :set nonumber!<CR>
 map <S-Tab> V`]=
 map j gj
 map k gk
+
+set rtp+=/Users/zachary/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+set laststatus=2
