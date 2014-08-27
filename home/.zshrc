@@ -103,3 +103,12 @@ alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem l
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 bindkey -e
+
+
+### vmpooler functions
+listvm() { curl --url http://vcloud.delivery.puppetlabs.net/vm }
+getvm() { curl -d --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
+sshvm() { ssh -i ~/.ssh/id_rsa-acceptance root@$1 }
+rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
+
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
