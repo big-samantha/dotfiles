@@ -69,9 +69,9 @@ alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
 
 #vars
-#
 export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 #magic
 if [ -d /src/puppetlabs/puppet ]; then
@@ -102,7 +102,6 @@ alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem l
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-bindkey -e
 
 
 ### vmpooler functions
@@ -111,4 +110,4 @@ getvm() { curl -d --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 sshvm() { ssh -i ~/.ssh/id_rsa-acceptance root@$1 }
 rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
+set -o vi
