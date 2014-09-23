@@ -36,3 +36,4 @@ python powerline_setup()
 python del powerline_setup
 set laststatus=2
 set noshowmode
+let g:ctrlp_show_hidden = 1
