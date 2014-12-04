@@ -72,9 +72,9 @@ alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
 
 #vars
-#
 export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 #magic
 if [ -d /src/puppetlabs/puppet ]; then
@@ -114,4 +114,4 @@ sshvm() { ssh -i ~/.ssh/id_rsa-acceptance root@$1 }
 sshwvm() { ssh -i ~/.ssh/id_rsa-acceptance Administrator@$1 }
 rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
+set -o vi
