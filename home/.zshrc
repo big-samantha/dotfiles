@@ -34,7 +34,7 @@ plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagra
 source $ZSH/oh-my-zsh.sh
 
 # Set general path
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zachary/Library/Python/2.7/bin/:$PATH
 
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
@@ -43,6 +43,9 @@ fi
 
 #options
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+set -o vi
+set editing-mode vi
+set blink-matching-paren on
 
 #aliases
 alias tmux="tmux -2"
@@ -102,13 +105,13 @@ alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem l
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-bindkey -e
 
 
 ### vmpooler functions
 listvm() { curl --url http://vcloud.delivery.puppetlabs.net/vm }
 getvm() { curl -d --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 sshvm() { ssh -i ~/.ssh/id_rsa-acceptance root@$1 }
+sshwvm() { ssh -i ~/.ssh/id_rsa-acceptance Administrator@$1 }
 rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
