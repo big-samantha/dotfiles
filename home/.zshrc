@@ -34,7 +34,7 @@ plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagra
 source $ZSH/oh-my-zsh.sh
 
 # Set general path
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zachary/Library/Python/2.7/bin/:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zachary/Library/Python/2.7/bin:$PATH
 
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
