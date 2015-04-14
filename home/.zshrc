@@ -115,3 +115,4 @@ sshwvm() { ssh -i ~/.ssh/id_rsa-acceptance Administrator@$1 }
 rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 
 set -o vi
+alias crontab="VIM_CRONTAB=true crontab"
