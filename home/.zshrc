@@ -78,7 +78,7 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 #magic
 if [ -d ~/Working/src/Misc/puppetlabs/puppet ]; then
-  export ENVPUPPET_BASEDIR='/home/zee/Working/src/Misc/puppetlabs/'
+  export ENVPUPPET_BASEDIR="${HOME}/Working/src/Misc/puppetlabs/"
   eval $($ENVPUPPET_BASEDIR/puppet/ext/envpuppet)
   export PATH=/src/puppetlabs/facter:/src/puppetlabs/puppet:$PATH
 fi
