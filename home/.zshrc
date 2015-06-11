@@ -34,7 +34,7 @@ plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagra
 source $ZSH/oh-my-zsh.sh
 
 # Set general path
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zachary/Library/Python/2.7/bin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Python/2.7/bin:$PATH
 
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
@@ -53,7 +53,7 @@ alias tns="tmux new -s"
 alias ta="tmux attach"
 alias tks='tmux kill-session -t'
 alias decrypt='gpg -d'
-alias 'gi'='gem install --no-ri --no-rdoc'
+alias 'gi'='gem install --no-ri --no-rdoc --verbose'
 alias psp='pry --simple-prompt'
 alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
@@ -75,13 +75,6 @@ alias be='bundle exec'
 export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
-
-#magic
-if [ -d ~/Working/src/Misc/puppetlabs/puppet ]; then
-  export ENVPUPPET_BASEDIR="${HOME}/Working/src/Misc/puppetlabs/"
-  eval $($ENVPUPPET_BASEDIR/puppet/ext/envpuppet)
-  export PATH=/src/puppetlabs/facter:/src/puppetlabs/puppet:$PATH
-fi
 
 if [ -f /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt ]; then
   export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt

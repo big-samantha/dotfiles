@@ -1,14 +1,14 @@
 [github]
-	user = zacharyalexstern
+	user = zeealexander
 [core]
 	editor = vim
 	autocrlf = input
 	safecrlf = true
 	filemode = false
-	excludesfile = /Users/zachary/.gitignore_global
+	excludesfile = /Users/zee/.gitignore_global
 [user]
-	name = Zachary Alex Stern
-	email = zacharyalexstern@gmail.com
+	name = Zee Alexander
+	email = zee@zee.space
 [alias]
   co = checkout
   ci = commit
