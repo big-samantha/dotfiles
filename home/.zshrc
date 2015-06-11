@@ -109,3 +109,4 @@ rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 
 set -o vi
 alias crontab="VIM_CRONTAB=true crontab"
+export WINEARCH=win32
