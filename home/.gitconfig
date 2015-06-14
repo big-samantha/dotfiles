@@ -1,5 +1,5 @@
 [github]
-	user = zacharyalexstern
+	user = zeealexander
 [core]
 	editor = vim
 	autocrlf = input
@@ -7,8 +7,8 @@
 	filemode = false
 	excludesfile = ~/.gitignore_global
 [user]
-	name = Zachary Alex Stern
-	email = zacharyalexstern@gmail.com
+	name = Zee Alexander
+	email = zee@zee.space
 [alias]
   co = checkout
   ci = commit
