@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,6 +39,10 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Pyth
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
 	export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+fi
+
+if [ -d /usr/local/opt/go/libexec/bin ]; then
+  export PATH=/usr/local/opt/go/libexec/bin:$PATH
 fi
 
 #options
@@ -59,6 +63,7 @@ alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
 alias vs='vagrant status'
 alias vu='vagrant up'
+alias vuf='vagrant up --provider=vmware_fusion'
 alias vuvb='vagrant up --provider=virtualbox'
 alias untar='tar xvf'
 alias vssh='vagrant ssh'
@@ -92,7 +97,6 @@ validateyaml() {
 decryptfile() {
   gpg --decrypt $1 > $1.tar.gz
 }
-
 
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
