@@ -76,7 +76,6 @@ alias be='bundle exec'
 alias grph='git rev-parse HEAD'
 
 #vars
-export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
