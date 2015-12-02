@@ -63,8 +63,6 @@ alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
 alias vs='vagrant status'
 alias vu='vagrant up'
-alias vuf='vagrant up --provider=vmware_fusion'
-alias vuvb='vagrant up --provider=virtualbox'
 alias untar='tar xvf'
 alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
@@ -75,6 +73,7 @@ alias ccat='pygmentize -g'
 alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
+alias grph='git rev-parse HEAD'
 
 #vars
 export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
@@ -96,6 +95,22 @@ validateyaml() {
 
 decryptfile() {
   gpg --decrypt $1 > $1.tar.gz
+}
+
+vdf() {
+  vagrant destroy $1 --force
+}
+
+vuf() {
+  vagrant up $1 --provider=vmware_fusion
+}
+
+vuv() {
+  vagrant up $1 --provider=virtualbox
+}
+
+vudo() {
+  vagrant up $1 --provider=digital_ocean
 }
 
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
