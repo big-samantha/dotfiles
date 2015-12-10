@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,6 +39,10 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Pyth
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
 	export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+fi
+
+if [ -d /usr/local/opt/go/libexec/bin ]; then
+  export PATH=/usr/local/opt/go/libexec/bin:$PATH
 fi
 
 #options
@@ -59,7 +63,6 @@ alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
 alias vs='vagrant status'
 alias vu='vagrant up'
-alias vuvb='vagrant up --provider=virtualbox'
 alias untar='tar xvf'
 alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
@@ -70,9 +73,9 @@ alias ccat='pygmentize -g'
 alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
+alias grph='git rev-parse HEAD'
 
 #vars
-export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
@@ -93,6 +96,21 @@ decryptfile() {
   gpg --decrypt $1 > $1.tar.gz
 }
 
+vdf() {
+  vagrant destroy $1 --force
+}
+
+vuf() {
+  vagrant up $1 --provider=vmware_fusion
+}
+
+vuv() {
+  vagrant up $1 --provider=virtualbox
+}
+
+vudo() {
+  vagrant up $1 --provider=digital_ocean
+}
 
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
