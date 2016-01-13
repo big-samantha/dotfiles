@@ -3,3 +3,4 @@
 .i3
 .config/powerline
 .config/powerline/themes/tmux
+.rbenv
