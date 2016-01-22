@@ -46,4 +46,6 @@ if $VIM_CRONTAB == "true"
     set nobackup
     set nowritebackup
 endif
+au BufNewFile,BufRead wilhelm  setf ruby
 "autocmd Syntax go,ruby,gitcommit %foldopen!
+:so ~/.vimrc_temp
