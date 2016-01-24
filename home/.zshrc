@@ -125,5 +125,3 @@ source ~/.zshrc_secret
 if [ -e /home/zee/.local/bin/powerline-config ]; then
   export POWERLINE_CONFIG_COMMAND='/home/zee/.local/bin/powerline-config'
 fi
-
-source ~/.gimmievsphere.sh
