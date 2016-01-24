@@ -121,7 +121,6 @@ set -o vi
 alias crontab="VIM_CRONTAB=true crontab"
 export WINEARCH=win32
 
-source ~/.zshrc_secret
 if [ -e /home/zee/.local/bin/powerline-config ]; then
   export POWERLINE_CONFIG_COMMAND='/home/zee/.local/bin/powerline-config'
 fi
