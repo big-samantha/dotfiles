@@ -2,53 +2,33 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 
 set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " My bundles here:
-Bundle 'Zenburn'
+Plugin 'Zenburn'
 
 " original repos on GitHub
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/syntastic"
-Bundle "scrooloose/nerdcommenter"
-Bundle "Shougo/neocomplete.vim"
-Bundle "godlygeek/tabular"
-Bundle "kien/ctrlp.vim"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "tpope/vim-rails"
-Bundle "mattn/webapi-vim"
-Bundle "mattn/gist-vim"
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'kien/ctrlp.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-rails'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 " syntax
-Bundle "rodjek/vim-puppet"
-Bundle "tpope/vim-markdown"
+Plugin 'rodjek/vim-puppet'
+Plugin 'tpope/vim-markdown'
+Plugin 'fatih/vim-go'
 
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non-GitHub repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" Git repos on your local machine (i.e. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
-" ...
-
+call vundle#end()             " required
 filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install (update) bundles
-" :BundleSearch(!) foo - search (or refresh cache first) for foo
-" :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle commands are not allowed.
 
 :so ~/.vimrc.settings

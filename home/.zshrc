@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,6 +39,10 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Pyth
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
 	export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+fi
+
+if [ -d /usr/local/opt/go/libexec/bin ]; then
+  export PATH=/usr/local/opt/go/libexec/bin:$PATH
 fi
 
 #options
@@ -59,7 +63,6 @@ alias vrnp='vagrant reload --no-provision'
 alias vunp='vagrant up --no-provision'
 alias vs='vagrant status'
 alias vu='vagrant up'
-alias vuvb='vagrant up --provider=virtualbox'
 alias untar='tar xvf'
 alias vssh='vagrant ssh'
 alias fixvbox='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
@@ -70,6 +73,7 @@ alias ccat='pygmentize -g'
 alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
+alias grph='git rev-parse HEAD'
 
 #vars
 export EDITOR='vim'
@@ -92,22 +96,34 @@ decryptfile() {
   gpg --decrypt $1 > $1.tar.gz
 }
 
+vdf() {
+  vagrant destroy $1 --force
+}
+
+vuf() {
+  vagrant up $1 --provider=vmware_fusion
+}
+
+vuv() {
+  vagrant up $1 --provider=virtualbox
+}
+
+vudo() {
+  vagrant up $1 --provider=digital_ocean
+}
 
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-
-### vmpooler functions
-listvm() { curl --url http://vcloud.delivery.puppetlabs.net/vm }
-getvm() { curl -d --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
-sshvm() { ssh -i ~/.ssh/id_rsa-acceptance root@$1 }
-sshwvm() { ssh -i ~/.ssh/id_rsa-acceptance Administrator@$1 }
-rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
-
 set -o vi
 alias crontab="VIM_CRONTAB=true crontab"
 export WINEARCH=win32
 
 source ~/.zshrc_secret
+if [ -e /home/zee/.local/bin/powerline-config ]; then
+  export POWERLINE_CONFIG_COMMAND='/home/zee/.local/bin/powerline-config'
+fi
+
+source ~/.gimmievsphere.sh

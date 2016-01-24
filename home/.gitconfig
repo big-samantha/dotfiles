@@ -1,11 +1,11 @@
 [github]
-	user = zeealexander
+	user = pizzaops
 [core]
 	editor = vim
 	autocrlf = input
 	safecrlf = true
 	filemode = false
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/zee/.gitignore_global
 [user]
 	name = Zee Alexander
 	email = zee@zee.space
