@@ -72,7 +72,6 @@ alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
 
 #vars
-export HOMEBREW_GITHUB_API_TOKEN=d53e5f0eecea6ae32f1d5198fbfc13399298b7a8
 export EDITOR='vim'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
@@ -110,3 +109,5 @@ rmvm() { curl -X DELETE --url http://vcloud.delivery.puppetlabs.net/vm/$1 }
 set -o vi
 alias crontab="VIM_CRONTAB=true crontab"
 export WINEARCH=win32
+
+source ~/.zshrc_secret
