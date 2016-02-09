@@ -124,3 +124,7 @@ export WINEARCH=win32
 if [ -e /home/zee/.local/bin/powerline-config ]; then
   export POWERLINE_CONFIG_COMMAND='/home/zee/.local/bin/powerline-config'
 fi
+
+if [ -e /Users/zachary/Library/Python/2.7/bin/powerline-config ]; then
+  export POWERLINE_CONFIG_COMMAND='/Users/zachary/Library/Python/2.7/bin/powerline-config'
+fi
