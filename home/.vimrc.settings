@@ -53,3 +53,4 @@ au BufNewFile,BufRead wilhelm  setf ruby
       :so ~/.vimrc_temp
 :   endif
 :endfunction
+let g:syntastic_always_populate_loc_list = 1

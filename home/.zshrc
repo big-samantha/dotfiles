@@ -49,6 +49,7 @@ fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 set -o vi
 set editing-mode vi
+bindkey -v
 set blink-matching-paren on
 
 #aliases
