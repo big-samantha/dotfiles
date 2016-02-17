@@ -41,6 +41,7 @@ let g:ctrlp_show_hidden = 1
 map <Leader>[ :bp<CR>
 map <Leader>] :bn<CR>
 map <Leader>b :CtrlPBuffer<CR>
+map <C-n> :Explore<CR>
 if $VIM_CRONTAB == "true"
     set nobackup
     set nowritebackup
