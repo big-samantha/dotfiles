@@ -125,3 +125,5 @@ export WINEARCH=win32
 if [ -e /home/zee/.local/bin/powerline-config ]; then
   export POWERLINE_CONFIG_COMMAND='/home/zee/.local/bin/powerline-config'
 fi
+
+[[ -s "/Users/zee/.gvm/scripts/gvm" ]] && source "/Users/zee/.gvm/scripts/gvm"
