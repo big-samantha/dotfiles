@@ -127,3 +127,6 @@ if [ -e /home/zee/.local/bin/powerline-config ]; then
 fi
 
 [[ -s "/Users/zee/.gvm/scripts/gvm" ]] && source "/Users/zee/.gvm/scripts/gvm"
+if [ -e /Users/zee/Library/Python/2.7/bin/powerline-config ]; then
+  export POWERLINE_CONFIG_COMMAND='/Users/zee/Library/Python/2.7/bin/powerline-config'
+fi

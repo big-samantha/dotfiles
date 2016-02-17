@@ -3,7 +3,4 @@
 .i3
 .config/powerline
 .config/powerline/themes/tmux
-<<<<<<< HEAD
-=======
 .rbenv
->>>>>>> 6ed711761462e25574e25bbd446844996619763b
