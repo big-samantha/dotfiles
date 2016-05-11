@@ -14,6 +14,7 @@ Plugin 'Zenburn'
 " original repos on GitHub
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
@@ -21,6 +22,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-rails'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-surround'
 
 " syntax
 Plugin 'rodjek/vim-puppet'

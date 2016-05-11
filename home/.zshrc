@@ -29,7 +29,7 @@ ZSH_THEME="flazz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang docker svn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,6 +75,8 @@ alias rlibmodule='export RUBYLIB="$(pwd)"/lib:$RUBYLIB'
 alias serverme='mosh --server=/usr/bin/mosh-server serverbot'
 alias be='bundle exec'
 alias grph='git rev-parse HEAD'
+alias de='dotenv'
+alias gs='git status'
 
 #vars
 export EDITOR='vim'
@@ -129,4 +131,8 @@ fi
 [[ -s "/Users/zee/.gvm/scripts/gvm" ]] && source "/Users/zee/.gvm/scripts/gvm"
 if [ -e /Users/zee/Library/Python/2.7/bin/powerline-config ]; then
   export POWERLINE_CONFIG_COMMAND='/Users/zee/Library/Python/2.7/bin/powerline-config'
+fi
+
+if [ -e ~/.zshrc_secret ]; then
+  source ~/.zshrc_secret
 fi

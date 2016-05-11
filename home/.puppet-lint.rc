@@ -1,1 +1,7 @@
 --no-class_inherits_from_params_class-check
+--no-80chars-check
+--no-2sp_soft_tabs-check
+--no-autoloader_layout-check
+--no-hard_tabs-check
+--no-trailing_whitespace-check
+--no-arrow_alignment-check
