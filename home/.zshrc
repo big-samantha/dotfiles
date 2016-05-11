@@ -78,6 +78,8 @@ alias grph='git rev-parse HEAD'
 alias de='dotenv'
 alias gs='git status'
 
+alias oa='open -a'
+
 #vars
 export EDITOR='vim'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
