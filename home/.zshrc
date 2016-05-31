@@ -140,3 +140,8 @@ fi
 if [ -e ~/.zshrc_secret ]; then
   source ~/.zshrc_secret
 fi
+
+# Use ssh agent via gnome-keyring-daemon
+if [ "$0" = "/usr/sbin/lightdm-session" -a "$DESKTOP_SESSION" = "i3" ]; then
+    export $(gnome-keyring-daemon -s)
+fi
