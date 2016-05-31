@@ -31,10 +31,7 @@ let g:neocomplete#enable_at_startup = 1
 map <S-Tab> V`]=
 map j gj
 map k gk
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+set rtp+=/home/zee/.local/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set noshowmode
 let g:ctrlp_show_hidden = 1
