@@ -143,5 +143,7 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 
 exec volumeicon
 exec nm-applet
-exec dropboxd
 exec xflux -z 97217
+exec redshift-gtk
+exec insync start
+exec xsetroot -solid "#333333"
