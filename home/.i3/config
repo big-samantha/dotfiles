@@ -147,3 +147,4 @@ exec xflux -z 97217
 exec redshift-gtk
 exec insync start
 exec xsetroot -solid "#333333"
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
