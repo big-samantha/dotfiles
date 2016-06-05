@@ -140,6 +140,9 @@ bar {
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
+
 
 exec volumeicon
 exec nm-applet
@@ -147,4 +150,5 @@ exec xflux -z 97217
 exec redshift-gtk
 exec insync start
 exec xsetroot -solid "#333333"
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+exec synclient PalmDetect=1
+exec start-gnome-keyring.sh
