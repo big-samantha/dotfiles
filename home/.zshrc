@@ -25,6 +25,8 @@ ZSH_THEME="flazz"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
+#
+kernel=$(uname)
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -34,7 +36,7 @@ plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagra
 source $ZSH/oh-my-zsh.sh
 
 # Set general path
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Python/2.7/bin:$PATH
+export PATH=~/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Python/2.7/bin:$PATH
 
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
@@ -141,7 +143,6 @@ if [ -e ~/.zshrc_secret ]; then
   source ~/.zshrc_secret
 fi
 
-# Use ssh agent via gnome-keyring-daemon
-if [ "$0" = "/usr/sbin/lightdm-session" -a "$DESKTOP_SESSION" = "i3" ]; then
-    export $(gnome-keyring-daemon -s)
-fi
+# Connect to SSH Agent for i3
+
+#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
