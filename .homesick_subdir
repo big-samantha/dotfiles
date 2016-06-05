@@ -5,3 +5,4 @@
 .config/powerline/themes/tmux
 .rbenv
 .config/i3status
+.local/bin

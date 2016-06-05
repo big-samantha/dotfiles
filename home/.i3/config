@@ -144,11 +144,11 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
 
 
-exec volumeicon
-exec nm-applet
-exec xflux -z 97217
-exec redshift-gtk
-exec insync start
-exec xsetroot -solid "#333333"
-exec synclient PalmDetect=1
-exec start-gnome-keyring.sh
+#exec volumeicon
+#exec nm-applet
+#exec redshift-gtk
+#exec insync start
+#exec xsetroot -solid "#333333"
+#exec synclient PalmDetect=1 PalmMinWidth=5 PalmMinZ=50
+#exec ~/.local/bin/start-gnome-keyring.sh
+#exec_always ~/.local/bin/per-workspace-layout.pl
