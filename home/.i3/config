@@ -152,7 +152,7 @@ assign [class="jetbrains-rubymine"] dev
 
 exec --no-startup-id NO_AT_BRIDGE=1 nm-applet
 exec NO_AT_BRIDGE=1 redshift-gtk
-# exec insync start
+exec NO_AT_BRIDGE=1 insync start
 exec xsetroot -solid "#333333"
 exec synclient PalmDetect=1 PalmMinWidth=5 PalmMinZ=50
 exec .local/bin/start-gnome-keyring.sh
