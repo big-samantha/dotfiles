@@ -95,8 +95,8 @@ bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+2 move container to workspace web
+bindsym $mod+Shift+3 move container to workspace dev
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -154,7 +154,8 @@ exec --no-startup-id NO_AT_BRIDGE=1 nm-applet
 exec NO_AT_BRIDGE=1 redshift-gtk
 exec NO_AT_BRIDGE=1 insync start
 exec xsetroot -solid "#333333"
-exec synclient PalmDetect=1 PalmMinWidth=5 PalmMinZ=50
+exec synclient PalmDetect=1 PalmMinWidth=1 PalmMinZ=25
+exec syndaemon -i 0.1 -m 50 -d
 exec .local/bin/start-gnome-keyring.sh
 exec .local/bin/jetbrains-toolbox --minimize
 exec_always ~/.local/bin/per-workspace-layout.pl
