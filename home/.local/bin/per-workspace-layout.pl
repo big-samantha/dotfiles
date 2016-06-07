@@ -16,9 +16,8 @@ use AnyEvent::I3;
 use v5.10;
 
 my %layouts = (
-    '1' => 'splith',
-    'web' => 'tabbed',
-    'dev' => 'tabbed'
+    '1: web' => 'tabbed',
+    '2: dev' => 'tabbed'
 );
 
 my $i3 = i3();
