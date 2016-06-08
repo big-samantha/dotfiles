@@ -145,4 +145,10 @@ fi
 
 # Connect to SSH Agent for i3
 
-#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+UNAME='Linux'
+SESSION='i3'
+
+if [[ $UNAME == $(uname) && $SESSION == $DESKTOP_SESSION ]]; then
+  export $(dex /etc/xdg/autostart/gnome-keyring-ssh.desktop)
+fi
+
