@@ -140,9 +140,10 @@ bar {
         status_command i3status
 }
 
-bindsym XF86AudioRaiseVolume exec amixer -c 1 -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -c 1 -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -c 1 -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse -c 1 -q sset Master 2dB+ unmute && amixer -D pulse set Master unmute
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse -c 1 -q sset Master 2dB- unmute && amixer -D pulse set Master unmute
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
+
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
 
@@ -150,7 +151,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightnes
 
 assign [class="google-chrome"] 1: web
 assign [class="jetbrains-rubymine"] 2: dev
-assign [title="Oracle VM VirtualBox Manager"] vbox
+assign [class="VirtualBox"] vbox
 
 # Misc Tweaks
 workspace_auto_back_and_forth yes
@@ -162,6 +163,5 @@ exec NO_AT_BRIDGE=1 insync start
 exec xsetroot -solid "#333333"
 exec synclient PalmDetect=1 PalmMinWidth=1 PalmMinZ=25
 exec syndaemon -i 0.1 -m 50 -d
-exec_always .local/bin/start-gnome-keyring.sh
 exec .local/bin/jetbrains-toolbox --minimize
 exec_always /home/zee/.local/bin/per-workspace-layout.pl
