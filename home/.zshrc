@@ -26,14 +26,14 @@ ZSH_THEME="flazz"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 #
-kernel=$(uname)
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# shellcheck disable=SC2034
 plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant heroku rails aws golang docker svn)
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # Set general path
 export PATH=~/.local/bin:~/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zee/Library/Python/2.7/bin:$PATH
@@ -142,13 +142,3 @@ fi
 if [ -e ~/.zshrc_secret ]; then
   source ~/.zshrc_secret
 fi
-
-# Connect to SSH Agent for i3
-
-UNAME='Linux'
-SESSION='i3'
-
-if [[ $UNAME == $(uname) && $SESSION == $DESKTOP_SESSION ]]; then
-  export $(dex /etc/xdg/autostart/gnome-keyring-ssh.desktop)
-fi
-
