@@ -162,6 +162,6 @@ exec NO_AT_BRIDGE=1 redshift-gtk
 exec NO_AT_BRIDGE=1 insync start
 exec xsetroot -solid "#333333"
 exec synclient PalmDetect=1 PalmMinWidth=1 PalmMinZ=25
-exec syndaemon -i 0.1 -m 50 -d
+exec syndaemon -i 0.5 -m 50 -R -d
 exec .local/bin/jetbrains-toolbox --minimize
 exec_always /home/zee/.local/bin/per-workspace-layout.pl
