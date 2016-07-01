@@ -17,7 +17,8 @@ use v5.10;
 
 my %layouts = (
     '1: web' => 'tabbed',
-    '2: dev' => 'tabbed'
+    '2: dev' => 'tabbed',
+    'vbox' => 'tabbed'
 );
 
 my $i3 = i3();
