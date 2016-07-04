@@ -25,7 +25,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 
 " syntax
-Plugin 'rodjek/vim-puppet'
+Plugin 'voxpupuli/vim-puppet'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'hashivim/vim-terraform'
