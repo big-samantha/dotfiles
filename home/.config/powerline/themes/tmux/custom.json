@@ -8,12 +8,7 @@
       { "function": "powerline.segments.common.bat.battery" },
       { "function": "powerline.segments.common.net.internal_ip",
         "args": {
-          "interface": "en0"
-        }
-      },
-      { "function": "powerline.segments.common.net.internal_ip",
-        "args": {
-          "interface": "en1"
+          "interface": "default_gateway"
         }
       },
 			{
