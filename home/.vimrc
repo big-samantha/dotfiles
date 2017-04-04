@@ -29,6 +29,7 @@ Plugin 'voxpupuli/vim-puppet'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'hashivim/vim-terraform'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()             " required
 filetype plugin indent on     " required!
