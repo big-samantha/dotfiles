@@ -31,7 +31,7 @@ ZSH_THEME="flazz"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # shellcheck disable=SC2034
-plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant golang docker)
+plugins=(git ruby github git-remote-branch vagrant zsh-syntax-highlighting vagrant golang docker aws)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -81,8 +81,8 @@ alias de='dotenv'
 alias gs='git status'
 
 alias oa='open -a'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
+#alias pbcopy='xsel --clipboard --input'
+#alias pbpaste='xsel --clipboard --output'
 
 #vars
 export EDITOR='vim'
@@ -121,6 +121,10 @@ vudo() {
   vagrant up $1 --provider=digital_ocean
 }
 
+abt() {
+  aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" | jq .
+}
+
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
 ### Added by the Heroku Toolbelt
@@ -142,3 +146,5 @@ fi
 if [ -e ~/.zshrc_secret ]; then
   source ~/.zshrc_secret
 fi
+
+export JAVA_HOME=$(/usr/libexec/java_home)
