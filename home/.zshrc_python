@@ -1,2 +1,4 @@
 eval "$(pyenv init -)"
-export PYTHONPATH=~/opt/python
+if [ -d ~/opt/python/womply-common-python ]; then
+  export PYTHONPATH=~/opt/python/womply-common-python
+fi
