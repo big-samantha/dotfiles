@@ -19,17 +19,17 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tpope/vim-rails'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
+Plugin 'editorconfig/editorconfig-vim'
 
 " syntax
 Plugin 'voxpupuli/vim-puppet'
-Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'hashivim/vim-terraform'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'gabrielelana/vim-markdown'
 
 call vundle#end()             " required
 filetype plugin indent on     " required!
