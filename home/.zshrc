@@ -125,6 +125,14 @@ abt() {
   aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" | jq .
 }
 
+findsubnet() {
+  abt $1 | jq '.["Reservations"][0]["Instances"][0]["SubnetId"]'
+}
+
+findsecg() {
+  abt $1 | jq '.["Reservations"][0]["Instances"][0]["SecurityGroups"]'
+}
+
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
 ### Added by the Heroku Toolbelt
@@ -145,6 +153,10 @@ fi
 
 if [ -e ~/.zshrc_secret ]; then
   source ~/.zshrc_secret
+fi
+
+if [ -e ~/.zshrc_python ]; then
+  source ~/.zshrc_python
 fi
 
 export JAVA_HOME=$(/usr/libexec/java_home)
