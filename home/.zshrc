@@ -81,6 +81,7 @@ alias de='dotenv'
 alias gs='git status'
 
 alias oa='open -a'
+alias tr='gtr'
 #alias pbcopy='xsel --clipboard --input'
 #alias pbpaste='xsel --clipboard --output'
 
