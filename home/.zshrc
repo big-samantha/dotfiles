@@ -138,9 +138,6 @@ findsecg() {
 
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 set -o vi
 alias crontab="VIM_CRONTAB=true crontab"
 export WINEARCH=win32
