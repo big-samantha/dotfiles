@@ -136,6 +136,10 @@ findsecg() {
   abt $1 | jq '.["Reservations"][0]["Instances"][0]["SecurityGroups"]'
 }
 
+runon() {
+  ssh $1 -- TERM=xterm $2
+}
+
 alias vgems='GEM_HOME=~/.vagrant.d/gems /Applications/Vagrant/embedded/bin/gem list'
 
 set -o vi
