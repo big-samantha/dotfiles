@@ -2,3 +2,4 @@
 .ruby-version
 .idea/*
 .vagrant/*
+.DS_Store
