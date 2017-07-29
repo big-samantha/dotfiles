@@ -163,4 +163,9 @@ if [ -e ~/.zshrc_python ]; then
   source ~/.zshrc_python
 fi
 
+if [ -e ~/.zshrc_womply ]; then
+  source ~/.zshrc_womply
+fi
+
 export JAVA_HOME=$(/usr/libexec/java_home)
+
