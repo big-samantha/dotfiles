@@ -25,7 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim'
 
 " syntax
-Plugin 'voxpupuli/vim-puppet'
+Plugin 'rodjek/vim-puppet'
 Plugin 'fatih/vim-go'
 Plugin 'hashivim/vim-terraform'
 Plugin 'elixir-lang/vim-elixir'
