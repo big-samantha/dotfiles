@@ -79,6 +79,7 @@ alias be='bundle exec'
 alias grph='git rev-parse HEAD'
 alias de='dotenv'
 alias gs='git status'
+alias cleanprod='git fetch origin production && git checkout production && git reset --hard origin/production'
 
 alias oa='open -a'
 alias tr='gtr'
