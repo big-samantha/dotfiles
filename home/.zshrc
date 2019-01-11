@@ -40,7 +40,7 @@ export PATH=~/.local/bin:~/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Us
 
 # Append rbenv stuff to path if it exists
 if [ -d ~/.rbenv ]; then
-	export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+	export PATH=$HOME/.rbenv/bin:$PATH
 fi
 
 if [ -d /usr/local/opt/go/libexec/bin ]; then

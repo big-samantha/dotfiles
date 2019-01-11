@@ -32,7 +32,7 @@ map <S-Tab> V`]=
 map j gj
 map k gk
 set rtp+=/home/zee/.local/lib/python2.7/site-packages/powerline/bindings/vim
-set rtp+=/Users/zee/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+set rtp+=/Users/zeea/Library/Python/3.7/lib/python/site-packages/powerline/bindings/vim
 set laststatus=2
 set noshowmode
 let g:ctrlp_show_hidden = 1
