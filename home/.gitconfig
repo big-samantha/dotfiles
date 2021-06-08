@@ -5,10 +5,10 @@
 	autocrlf = false
 	safecrlf = true
 	filemode = false
-	excludesfile = /Users/zee/.gitignore_global
+	excludesfile = /Users/ZAlexander/.gitignore_global
 [user]
-	name = Zee Alexander
-	email = zeea@ignw.io
+	name = Zoë Alexander
+	email = zoe.alexander@hunterstrategy.net
 [alias]
   co = checkout
   ci = commit
