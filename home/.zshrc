@@ -109,22 +109,6 @@ decryptfile() {
   gpg --decrypt $1 > $1.tar.gz
 }
 
-vdf() {
-  vagrant destroy $1 --force
-}
-
-vuf() {
-  vagrant up $1 --provider=vmware_fusion
-}
-
-vuv() {
-  vagrant up $1 --provider=virtualbox
-}
-
-vudo() {
-  vagrant up $1 --provider=digital_ocean
-}
-
 abt() {
   aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" | jq .
 }
@@ -164,8 +148,7 @@ if [ -e ~/.zshrc_python ]; then
   source ~/.zshrc_python
 fi
 
-if [ -e ~/.zshrc_womply ]; then
-  source ~/.zshrc_womply
-fi
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
