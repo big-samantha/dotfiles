@@ -28,3 +28,5 @@
 	trustExitCode = true
 [merge]
 	ff = only
+[credential]
+	helper = store
