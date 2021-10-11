@@ -8,7 +8,7 @@
 	excludesfile = /Users/ZAlexander/.gitignore_global
 [user]
 	name = Zoë Alexander
-	email = zoe.alexander@hunterstrategy.net
+	email = zoe@zoe.fi
 [alias]
   co = checkout
   ci = commit
